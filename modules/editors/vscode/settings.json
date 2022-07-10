@@ -1,0 +1,55 @@
+{
+  /*
+   * Editor settings.
+   */
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": -1,
+  // Identify code when saved
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // Editor fonts
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.fontFamily": "JetBrains Mono, FiraCode Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  // Live share
+  "liveshare.codeLens": false,
+  "liveshare.connectionMode": "relay",
+  "liveshare.featureSet": "insiders",
+  // Material Icon Theme
+  "material-icon-theme.folders.associations": {
+    ".idea": "config",
+    "cooldown": "helper",
+    "discord": "helper",
+    "en-US": "i18n",
+    "guild": "resource",
+    "listeners": "event",
+    "loaders": "tools",
+    "structures": "core",
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe"
+  },
+  // Elixir
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.suggestSpecs": false,
+  // Golang
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
+  "terminal.integrated.defaultProfile.linux": "zsh"
+}
