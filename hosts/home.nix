@@ -24,5 +24,5 @@
   programs.home-manager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
-  home.packages = with pkgs; [ htop discord google-chrome gh nixpkgs-fmt shellcheck nodePackages.prettier ];
+  home.packages = with pkgs; [ htop discord google-chrome nixpkgs-fmt exa procs bat ];
 }
