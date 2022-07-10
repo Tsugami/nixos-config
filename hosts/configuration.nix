@@ -38,11 +38,14 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  # services.xserver.xkbOptions = "ctrl:swapcaps";
+
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    layout = "us,us";
+    # xkbOptions = "compose:<key>"; .,
+    xkbVariant = "altgr-intl";
   };
 
   # Enable CUPS to print documents.
