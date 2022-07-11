@@ -30,7 +30,7 @@
   time.timeZone = "America/Sao_Paulo";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "pt_BR.utf8";
+  i18n.defaultLocale = "pt_BR.UTF-8";
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -78,15 +78,15 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
-  
+
   fonts.fonts = with pkgs; [
-    jetbrains-mono 
+    jetbrains-mono
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -121,7 +121,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
-  
+
   # home-manager.users.yslan = { pkgs, ... }: {
   #  # declared packages
   #  # home.packages = with pkgs; [ htop ];

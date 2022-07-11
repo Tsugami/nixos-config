@@ -9,6 +9,9 @@
   # paths it should manage.
   home.username = "yslan";
   home.homeDirectory = "/home/yslan";
+  home.sessionVariables = {
+    # NIX_PATH="/home/yslan/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels:nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos:nixos-config=/etc/nixos/configuration.nix:/nix/var/nix/profiles/per-user/root/channels";
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

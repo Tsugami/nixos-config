@@ -13,6 +13,5 @@
 
     enable = true;
     enableAutosuggestions = true;
-    syntaxHighlighting = true;
   };
 }
