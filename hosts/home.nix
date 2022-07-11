@@ -3,7 +3,7 @@
 {
 
   imports =
-    (import ../modules/editors) ++ (import ../modules/shell);
+    (import ../modules/editors) ++ (import ../modules/shell) ++ (import ../modules/programs);
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
