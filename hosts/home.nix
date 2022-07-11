@@ -24,5 +24,17 @@
   programs.home-manager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
-  home.packages = with pkgs; [ htop discord google-chrome nixpkgs-fmt exa procs bat ];
+  home.packages = with pkgs; [
+    # desktop programs
+    discord
+    slack
+    google-chrome
+    # others
+    nixpkgs-fmt
+    # command line tools
+    htop
+    exa
+    procs
+    bat
+  ];
 }
