@@ -3,10 +3,16 @@
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
+      # Themes
       github.github-vscode-theme
       pkief.material-icon-theme
+      usernamehw.errorlens
+
+      # Common Validations
       editorconfig.editorconfig
       esbenp.prettier-vscode
+
+      # Helpers
       streetsidesoftware.code-spell-checker
       usernamehw.errorlens
       eamodio.gitlens
