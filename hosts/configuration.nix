@@ -5,11 +5,7 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      # <home-manager/nixos>
-    ];
+  imports = [ ./hardware-configuration.nix ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -75,9 +71,15 @@
   users.users.yslan = {
     isNormalUser = true;
     description = "Yslan";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
+
+ virtualisation = {
+    docker.enable = true;
+  };
+
+  users.groups.docker.members = [ "yslan" ];
 
   fonts.fonts = with pkgs; [
     jetbrains-mono
@@ -93,6 +95,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     neofetch
+    docker-compose
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
