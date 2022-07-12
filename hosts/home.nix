@@ -32,10 +32,6 @@
     # others
     nixpkgs-fmt
     # command line tools
-    htop
-    exa
-    procs
-    bat
   ];
 
   gtk = {
