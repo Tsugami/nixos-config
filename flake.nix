@@ -27,7 +27,7 @@
           modules = [ ./hosts/configuration.nix ];
         };
       };
-      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      hmConfig.${user} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
           ./hosts/home.nix
