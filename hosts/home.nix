@@ -36,11 +36,7 @@
     exa
     procs
     bat
-    # development
-    docker-compose
   ];
-
-  virtualisation.docker.enable = true;
 
   gtk = {
     # Theming
