@@ -125,13 +125,6 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
 
-  # home-manager.users.yslan = { pkgs, ... }: {
-  #  # declared packages
-  #  # home.packages = with pkgs; [ htop ];
-  #  home.packages = [ pkgs.htop ];
-  # };
-
-
   nix = {
     package = pkgs.nixFlakes;
     extraOptions = "experimental-features = nix-command flakes";

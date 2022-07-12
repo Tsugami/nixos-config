@@ -2,8 +2,12 @@
 
 with pkgs;
 
-mkShell {
+t {
   buildInputs = [
     cargo
+    rustc
+    rustfmt
+    rust-analyzer
+    clippy
   ];
 }
