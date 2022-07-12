@@ -1,4 +1,5 @@
-_:
+# My aliases
+{ pkgs, ... }:
 let
   shellAliases = {
     # Common
@@ -10,23 +11,21 @@ let
     prs = "gh pr create --fill && gh pr merge -sd --admin"; # This alias creates a pull request and merge like squash
 
     # Common aliases
-    cls = 'clear';
-    reload!='. ~/.zshrc';
+    cls = "clear";
 
     # Directory aliases
-    dotfiles = "cd $HOME/.dotfiles";
-    dev = "cd $HOME/development";
+    dev = "cd $HOME/dev";
 
     # Docker aliases
-    d = 'docker $ * ';
-    d-c='docker-compose $*';
+    doc = "docker $ * ";
+    d-c="docker-compose $*";
 
     # Node aliases
-    clear-node = "find . -name " node_modules " -type d -prune | xargs du -chs";
+    clear-node = "find . -name \" node_modules \" -type d -prune | xargs du -chs";
   };
 in
 {
-  home.packages = [
+  home.packages = with pkgs; [
     htop
     exa
     procs

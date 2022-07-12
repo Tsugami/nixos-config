@@ -1,1 +1,1 @@
-[ ./zsh.nix ./git.nix ./base.zsh ]
+[ ./zsh.nix ./git.nix ./base.nix ]
