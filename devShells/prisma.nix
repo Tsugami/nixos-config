@@ -11,7 +11,6 @@ mkShell {
   ];
 
 
-  # Canvas
   shellHook = ''
     # Prisma
     export PRISMA_MIGRATION_ENGINE_BINARY="${pkgs.prisma-engines}/bin/migration-engine"
