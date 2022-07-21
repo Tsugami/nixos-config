@@ -1,1 +1,1 @@
-[ ./fonts.nix ]
+[ ./fonts.nix ./pipewire.nix  ]
