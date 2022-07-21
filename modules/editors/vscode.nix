@@ -16,6 +16,15 @@
       streetsidesoftware.code-spell-checker
       usernamehw.errorlens
       eamodio.gitlens
+
+      # Common
+      ms-azuretools.vscode-docker
+
+      # Frontend
+      bradlc.vscode-tailwindcss
+
+      # Backend
+      prisma.prisma
     ];
   };
 
