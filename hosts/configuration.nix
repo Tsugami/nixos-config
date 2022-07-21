@@ -5,7 +5,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ./common/docker.nix ./common/fonts.nix ./common/pipewire.nix ];
+  imports = [ ./hardware-configuration.nix ./common/docker.nix ./common/fonts.nix ./common/pipewire.nix ./common/ssh.nix ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -64,7 +64,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     neofetch
   ];
@@ -79,9 +79,6 @@
 
   # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
@@ -94,7 +91,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.05"; # Did you read the comment?
+  system.stateVersion = "22.05"; # Did you read the comment? YEAH!
 
   nix = {
     package = pkgs.nixFlakes;
