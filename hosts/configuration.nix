@@ -5,7 +5,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ./common  ];
+  imports = [ ./hardware-configuration.nix ./common/docker.nix ./common/fonts.nix ./common/pipewire.nix ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
