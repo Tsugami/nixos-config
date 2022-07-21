@@ -58,11 +58,6 @@
     shell = pkgs.zsh;
   };
 
-  fonts.fonts = with pkgs; [
-    jetbrains-mono
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
