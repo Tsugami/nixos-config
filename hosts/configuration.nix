@@ -54,15 +54,9 @@
   users.users.yslan = {
     isNormalUser = true;
     description = "Yslan";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
-
- virtualisation = {
-    docker.enable = true;
-  };
-
-  users.groups.docker.members = [ "yslan" ];
 
   fonts.fonts = with pkgs; [
     jetbrains-mono
@@ -78,7 +72,6 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     neofetch
-    docker-compose
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
