@@ -1,0 +1,7 @@
+- [ ] Shell: [Fish](https://nixos.wiki/wiki/Fish)
+- [ ] Terminal: [Alacritty](https://github.com/alacritty/alacritty)
+- [ ] Editor:  [Emacs](https://www.gnu.org/software/emacs)
+- [ ] WM: [Awesome](https://awesomewm.org/)
+- [ ] Notification: [Dunst](https://github.com/dunst-project/dunst)
+- [ ] Bar: [Polybar](https://github.com/polybar/polybar)
+- [ ] Menu: [rofi](https://github.com/davatorium/rofi)
